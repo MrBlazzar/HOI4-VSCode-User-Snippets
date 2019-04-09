@@ -1,0 +1,872 @@
+{
+	"country_event": {
+		"prefix": "country_event",
+		"body": [
+			"country_event = {"
+				"	id = Namespacehere.IDhere"
+				"	title = Namespacehere.IDhere.t"
+				"	desc = Namespacehere.IDhere.d"
+				"	picture = GFX_event_picture"
+				"	is_triggered_only = yes"
+				"	fire_only_once = yes"
+				""
+				"	trigger = {}"
+				"	mean_time_to_happen = {"
+				"		days = 2"
+				"	}"
+			"}"
+		],
+		"description": "country event structure"
+	},
+
+	"set_variable_long": {
+		"prefix": "set_variable",
+		"body": [
+			"set_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VARIABLEVALUE"
+			"}"
+		],
+		"description": "set variable long structure"
+	},
+
+	"set_variable_short": {
+		"prefix": "set_variable",
+		"body": [
+			"set_variable = { VARIABLENAME = VARIABLEVALUE }"
+		],
+		"description": "set variable short structure"
+	},
+
+	"add_to_variable_long": {
+		"prefix": "add_to_variable",
+		"body": [
+			"add_to_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VALUETOADD"
+			"}"
+		],
+		"description": "add to variable long structure"
+	},
+
+	"add_to_variable_short": {
+		"prefix": "add_to_variable",
+		"body": [
+			"add_to_variable = { VARIABLENAME = VARIABALETOADD }"
+		],
+		"description": "add to variable short structure"
+	},
+
+	"subtract_from_variable_long": {
+		"prefix": "subtract_from_variable",
+		"body": [
+			"subtract_from_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VARIABALETOSUBTRACT"
+			"}"
+		],
+		"description": "subtract from variable long structure"
+	},
+
+	"subtract_from_variable_short": {
+		"prefix": "subtract_from_variable",
+		"body": [
+			"subtract_from_variable = { VARIABLENAME = VARIABALETOSUBTRACT }"
+		],
+		"description": "subtract from variable short structure"
+	},
+
+	"multiply_variable_long": {
+		"prefix": "multiply_variable",
+		"body": [
+			"multiply_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VALUETOMULTIPLE"
+			"}"
+		],
+		"description": "multiply variable long structure"
+	},
+
+	"multiply_variable_short": {
+		"prefix": "multiply_variable",
+		"body": [
+			"multiply_variable = { VARIABLENAME = VALUETOMULTIPLE }"
+		],
+		"description": "multiply variable short structure"
+	},
+
+	"divide_variable_long": {
+		"prefix": "divide_variable",
+		"body": [
+			"divide_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VALUETODIVIDE"
+			"}"
+		],
+		"description": "divide variable long structure"
+	},
+
+	"divide_variable_short": {
+		"prefix": "divide_variable",
+		"body": [
+			"divide_variable = { VARIABLENAME = VALUETODIVIDE }"
+		],
+		"description": "divide variable short structure"
+	},
+
+	"clear_variable": {
+		"prefix": "clear_variable",
+		"body": [
+			"clear_variable = VARIABLENAME"
+		],
+		"description": "clear variable structure"
+	},
+
+	"clamp_variable": {
+		"prefix": "clamp_variable",
+		"body": [
+			"clamp_variable = {"
+			"	var = VARIABLENAME"
+			"	min = VARIABLETOMINAT"
+			"	max = VARIABLETOMAXAT"
+			"}"
+		],
+		"description": "clamp variable structure"
+	},
+
+	"round_variable": {
+		"prefix": "round_variable",
+		"body": [
+			"round_variable = VARIABLENAME"
+		],
+		"description": "round variable structure"
+	},
+
+	"check_variable_compare_long": {
+		"prefix": "check_variable",
+		"body": [
+			"check_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VARIABLETOCOMPARE"
+			"	compare = less_than/less_than_or_equals/greater_than/greater_than_or_equals/equals/not_equals"
+			"}"
+		],
+		"description": "check variabale structure defaults to greater_than_or_equals if compare is left out"
+	},
+
+	"check_variable_compare_short": {
+		"prefix": "check_variable",
+		"body": [
+			"check_variable = { VARIABLENAME =/</> VARIABLETOCOMPARETO }"
+		],
+		"description": "check variabale short structure >= methods don't work"
+	},
+
+	"has_variable": {
+		"prefix": "has_variable",
+		"body": [
+			"has_variable = VARIABLENAME"
+		],
+		"description": "has variable structure"
+	},
+
+	"set_temp_variable_long": {
+		"prefix": "set_temp_variable",
+		"body": [
+			"set_temp_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VARIABLEVALUE"
+			"}"
+		],
+		"description": "set temp variable long structure"
+	},
+
+	"set_temp_variable_short": {
+		"prefix": "set_temp_variable",
+		"body": [
+			"set_temp_variable = { VARIABLENAME = VARIABLEVALUE }"
+		],
+		"description": "set temp variable short structure"
+	},
+
+	"add_to_temp_variable_long": {
+		"prefix": "add_to_temp_variable",
+		"body": [
+			"add_to_temp_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VALUETOADD"
+			"}"
+		],
+		"description": "add to temp variable long structure"
+	},
+
+	"add_to_temp_variable_short": {
+		"prefix": "add_to_temp_variable",
+		"body": [
+			"add_to_temp_variable = { VARIABLENAME = VARIABALETOADD }"
+		],
+		"description": "add to temp variable short structure"
+	},
+
+	"subtract_from_temp_variable_long": {
+		"prefix": "subtract_from_temp_variable",
+		"body": [
+			"subtract_from_temp_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VARIABALETOSUBTRACT"
+			"}"
+		],
+		"description": "subtract from temp variable long structure"
+	},
+
+	"subtract_from_temp_variable_short": {
+		"prefix": "subtract_from_temp_variable",
+		"body": [
+			"subtract_from_temp_variable = { VARIABLENAME = VARIABALETOSUBTRACT }"
+		],
+		"description": "subtract from temp variable short structure"
+	},
+
+	"multiply_variable_long": {
+		"prefix": "multiply_temp_variable",
+		"body": [
+			"multiply_temp_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VALUETOMULTIPLE"
+			"}"
+		],
+		"description": "multiply temp variable long structure"
+	},
+
+	"multiply_temp_variable_short": {
+		"prefix": "multiply_temp_variable",
+		"body": [
+			"multiply_temp_variable = { VARIABLENAME = VALUETOMULTIPLE }"
+		],
+		"description": "multiply temp variable short structure"
+	},
+
+	"divide_temp_variable_long": {
+		"prefix": "divide_temp_variable",
+		"body": [
+			"divide_temp_variable = {"
+			"	var = VARIABLENAME"
+			"	value = VALUETODIVIDE"
+			"}"
+		],
+		"description": "divide temp variable long structure"
+	},
+
+	"divide_temp_variable_short": {
+		"prefix": "divide_temp_variable",
+		"body": [
+			"divide_temp_variable = { VARIABLENAME = VALUETODIVIDE }"
+		],
+		"description": "divide temp_ variable short structure"
+	},
+
+	"clamp_temp_variable": {
+		"prefix": "clamp_temp_variable",
+		"body": [
+			"clamp_temp_variable = {"
+			"	var = VARIABLENAME"
+			"	min = VARIABLETOMINAT"
+			"	max = VARIABLETOMAXAT"
+			"}"
+		],
+		"description": "clamp temp variable structure"
+	},
+
+	"on_actions": {
+		"prefix": "on_actions",
+		"body": [
+			"on_actions = {"
+			""
+			"}"	
+		],
+		"description": "on_actions structure"
+	},
+
+	"on_startup": {
+		"prefix": "on_startup",
+		"body": [
+			"on_startup = {"
+			"	effect = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "on_startup structure"
+	},
+
+	"on_peaceconference_ended": {
+		"prefix": "on_peaceconference",
+		"body": [
+			"on_peaceconference_ended = {"
+			"	effect = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "on_peaceconference_ended structure"
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if = {"
+			"	limit = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "if structure"
+	},
+
+	"else_if": {
+		"prefix": "else_if",
+		"body": [
+			"else_if = {"
+			"	limit = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "else_if structure"
+	},
+
+	"every_state": {
+		"prefix": "every_state",
+		"body": [
+			"every_state = {"
+			"	limit = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "every_state structure"
+	},
+
+	"every_owned_state": {
+		"prefix": "every_owned_state",
+		"body": [
+			"every_owned_state = {"
+			"	limit = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "every_owned_state structure"
+	},
+
+	"option": {
+		"prefix": "option",
+		"body": [
+			"option = {"
+			"	name = Namespacehere.IDHere.optionletterhere"
+			"}"
+		],
+		"description": "option structure"
+	},
+
+	"immediate": {
+		"prefix": "immediate",
+		"body": [
+			"immediate = {"
+			"	"
+			"}"
+		],
+		"description": "immediate structure"
+	},
+
+	"relative_position": {
+		"prefix": "relative_position",
+		"body": "relative_position_id = "
+		"description": "relative position id structure"
+	},
+
+	"focus": {
+		"prefix": "focus",
+		"body": [
+			"focus = {"
+			"	id = focus_id_goes_here"
+			"	icon = icon_goes_here"
+			"	cost = 10"
+			"	x = 0"
+			"	y = 0"
+			"	available = {}"
+			"	bypass = {}"
+			"	allow_branch = {}"
+			"	prerequisite = { focus = prereq_focus_here_more_lines_for_more_of_them }"
+			"	mutually_exclusive = { focus = mutual_exclusive_goes_here }"
+			"	relative_position_id = focus_id_for_relative_goes_here"
+			""
+			"completion_reward = {"
+			"	"
+			"}"
+		],
+		"description": "Focus structure"
+	},
+
+	"idea": {
+		"prefix": "idea_block",
+		"body": [
+			"IDEA_ID_GOES_HERE = {"
+			"	allowed = {"
+			"		always = no"
+			"	}"
+			""
+			"	allowed_civil_war = {"
+			"		always = yes"
+			"	}"
+			""
+			"	removal_cost = -1"
+			""
+			"	picture = PICTURE_ID_GOES_HERE"
+			""
+			"	modifier = {"
+			"		"
+			"	}"
+			"}"
+		],
+		"description": "idea structure"
+	},
+
+	"hidden effect": {
+		"prefix": "hidden_effect",
+		"body": [
+			"hidden_effect = {"
+			"	"
+			"}"
+		],
+		"description": "hidden_effect structure"
+	},
+
+	"news_event": {
+		"prefix": "news_event",
+		"body": [
+			"news_event = {"
+			"	id = Namespacehere.IDhere"
+			"	title = Namespacehere.IDhere.t"
+			"	desc = Namespacehere.IDhere.d"
+			"	picture = GFX_event_picture"
+			"	is_triggered_only = yes"
+			"	fire_only_once = yes"
+			""
+			"	trigger = {}"
+			"	mean_time_to_happen = {"
+			"		days = 2"
+			"	}"
+			"}"
+		],
+		"description": "news event structure"
+	},
+
+	"completion_reward": {
+		"prefix": "completion_reward",
+		"body": [
+			"completion_reward = {"
+			"	"
+			"}"
+		],
+		"description": "completion reward structure"
+	},
+
+	"swap_ideas": {
+		"prefix": "swap_ideas",
+		"body": [
+			"swap_ideas = {"
+			"	remove_idea = IDEANAMEID"
+			"	add_idea = IDEANAMEID"
+			"}"
+		],
+		"description": "swap ideas structure"
+	},
+
+	"add_timed_idea": {
+		"prefix": "add_timed_idea",
+		"body": "add_timed_idea = { idea = IDEAIDNAME days = DAYS }"
+		"description": "add timed idea structure"
+	}
+
+	"spriteType": {
+		"prefix": "spriteType",
+		"body": [
+			"spriteType = {"
+			"	name = \"GFX_NAMEOFGFXHERE\""
+			"	textureFile = \"directorytofileincludingfilenameandextension\""
+			"	effectFile = \"gfx/FX/buttonstate_nodowneffect.lua\"//unless we actually need a effect usually none needed"
+			"}"
+		],
+		"description": "spriteType structure"
+	},
+
+	"add_tech_bonus": {
+		"prefix": "add_tech_bonus",
+		"body": [
+			"add_tech_bonus = {"
+			"	name = NAMEFORLOCNOTUSUALLYUSED"
+			"	uses = NUMBEROFUSES"
+			"	bonus = BONUS0.01-1"
+			"	ahead_reduction = AHEADREDUCTION0.01-1"
+			"	technology = TECHID"
+			"	category = CATEGORYID"
+			"}"
+		],
+		"description": "add tech bonus structure"
+	},
+
+	"equipment_bonus": {
+		"prefix": "equipment_bonus",
+		"body": [
+			"equipment_bonus = {"
+			"	equipmentname = {"
+			"		#BONUSESHERE"
+			"		instant = yes"
+			"	}"
+			"}"
+		],
+		"description": "equipment bonus structure"
+	},
+
+	"defined_text": {
+		"prefix": "defined_text",
+		"body": [
+			"defined_text = {"
+			"	name = NAMEFORLOCTEXTHEREBRO"
+			"	text = {"
+			"		trigger = {"
+			"			"
+			"		}"
+			"		localization_key = LOCKEYHERESURROUNDEDBYQUOTES"
+			"	}"
+			"	text = {"
+			"		trigger = {"
+			"			"
+			"		}"
+			"		localization_key = LOCKEYHERESURROUNDEDBYQUOTES"
+			"	}"
+			"}"
+		],
+		"description": "structure for defined_text"
+	},
+
+	"shared_focus": {
+		"prefix": "shared_focus",
+		"body": [
+			"shared_focus = {"
+			"	id = focus_id_goes_here"
+			"	icon = icon_goes_here"
+			"	cost = 10"
+			"	x = 0"
+			"	y = 0"
+			"	available = {}"
+			"	bypass = {}"
+			"	allow_branch = {}"
+			"	prerequisite = { focus = prereq_focus_here_more_lines_for_more_of_them }"
+			"	mutually_exclusive = { focus = mutual_exclusive_goes_here }"
+			"	relative_position_id = focus_id_for_relative_goes_here"
+			""
+			"completion_reward = {"
+			"	"
+			"}"
+		],
+		"description": "shared_focus structure"
+	},
+
+	"entity": {
+		"prefix": "entity",
+		"body": [
+			"entity = {"
+			"	name = putnameofentityinquotes"
+			"	pdxmesh = putnameofmeshinquotes"
+			"}"
+		],
+		"description": "entyt structure"
+	},
+
+	"pdxmesh": {
+		"prefix": "pdxmesh",
+		"body": [
+			"pdxmesh = {"
+			"	name = nameofmeshinquotes"
+			"	file = gfx/models/static_mapobjects/"
+			""
+			"	meshsettings = {"
+			"		texture_diffuse = nameofdiffusetextureinquotes.dds"
+			"		texture_normal = nameofnormaltextureinquotes.dds"
+			"		texture_specular = nameofpseculartextureinquotes.dds"
+			"	}"
+			""
+			"	scale = 1.0"
+			""
+			"	cull_distance = 700.0f"
+			"}"
+		],
+		"description": "pdxmesh structure"
+	},
+
+	"type": {
+		"prefix": "type",
+		"body": [
+			"type={"
+			"	type=typeinquotes"
+			"	use_animation=no"
+			"	scale=1.000000"
+			"	always_visible=yes"
+			"	object={"
+			"		name=objectnameinquotes"
+			"		position={"
+			"			1864.000 12.000 981.000"
+			"		}"
+			"		rotation={"
+			"			0.000 0.000 0.000"
+			"		}"
+			"	}"
+			"}"
+		],
+		"description": "type for static objects structure"
+	},
+
+	"state_building": {
+		"prefix": "state_shared_building",
+		"body": [
+			"STATE_ID = {"
+			"	if = {"
+			"		limit = {"
+			"			is_owned_and_controlled_by = ROOT"
+			"			free_building_slots = {"
+			"				building = BUILDING_TYPE"
+			"				size > 0"
+			"				include_locked = yes"
+			"			}"
+			"		}"
+			"		add_extra_state_shared_building_slots = NUM_SLOTS"
+			"		add_building_construction = {"
+			"			type = BUILDING_TYPE"
+			"			level = NUM_SLOTS"
+			"			instant_build = yes"
+			"		}"
+			"	}"
+			"}"
+		],
+		"description": "structure for state shared buildings"
+	},
+
+	"add_to_array": {
+		"prefix": "add_to_array",
+		"body": [
+			"add_to_array = {"
+			"	array = <array_name>"
+			"	value = <value>"
+			"	index = <index_optional>"
+			"}"
+		],
+		"description": "add to array structure"
+	},
+
+	"remove_from_array": {
+		"prefix": "remove_from_array",
+		"body": [
+			"remove_from_array = {"
+			"	array = <array_name>"
+			"	value = <value>"
+			"	index = <index_optional>"
+			"}"
+		],
+		"description": "remove from array structure"
+	},
+
+	"clear_array": {
+		"prefix": "clear_array",
+		"body": [
+			"clear_array = <array_name>"
+		],
+		"description": "clears the array"
+	},
+
+	"resize_array": {
+		"prefix": "resize_Array",
+		"body": [
+			"resize_array = {"
+			"	array = <array_name>"
+			"	value = <value>"
+			"	size = <int>"
+			"}"
+		],
+		"description": "resize the array"
+	},
+
+	"for_each_loop": {
+		"prefix": "for_each_loop",
+		"body": [
+			"for_each_loop = {"
+			"	array = <name>"
+			"	value = <string>"
+			"	index = <string>"
+			"	break = <string>"
+			"	"
+			"	<effects>"
+			"],"
+		],
+		"description": "for each loop structure"
+	},
+
+	"for_each_scope_loop": {
+		"prefix": "for_each_scope_loop",
+		"body": [
+			"for_each_scope_loop = {"
+			"	array = <name>"
+			"	break = <string>"
+			"	"
+			"	<effects>"
+			"}"
+		],
+		"description": "for each scope loop structure"
+	},
+
+	"random_scope_in_array": {
+		"prefix": "random_scope_in_array",
+		"body": [
+			"random_scope_in_array = {"
+			"	array = <name>"
+			"	break = <string>"
+			"	limit = { <triggers> }"
+			"	"
+			"	<effects>"
+			"}"
+		],
+		"description": "random scope in array structure"
+	},
+
+	"add_to_temp_array": {
+		"prefix": "add_to_temp_array",
+		"body": [
+			"add_to_temp_array = {"
+			"	array = <array_name>"
+			"	value = <value>"
+			"	index = <index_optional>"
+			"}"
+		],
+		"description": "add to temp array structure"
+	},
+
+	"remove_from_temp_array": {
+		"prefix": "remove_from_temp_array",
+		"body": [
+			"remove_from_temp_array = {"
+			"	array = <array_name>"
+			"	value = <value>"
+			"	index = <index_optional>"
+			"}"
+		],
+		"description": "remove temp from array structure"
+	},
+
+	"clear_temp_array": {
+		"prefix": "clear_temp_array",
+		"body": [
+			"clear_temp_array = <array_name>"
+		],
+		"description": "clears the temp array"
+	},
+
+	"resize_temp_array": {
+		"prefix": "resize_temp_array",
+		"body": [
+			"resize_temp_array = {"
+			"	array = <array_name>"
+			"	value = <value>"
+			"	size = <int>"
+			"}"
+		],
+		"description": "resize the temp array"
+	},
+
+	"is_in_array": {
+		"prefix": "is_in_array",
+		"body": [
+			"is_in_array = {"
+			"	array = <name>"
+			"	value = <value>"
+			"}"
+		],
+		"description": "is in array structure"
+	},
+
+	"any_of": {
+		"prefix": "any_of",
+		"body": [
+			"any_of = {"
+			"	array = <name>"
+			"	value = <string>"
+			"	index = <string>"
+			"	"
+			"	<triggers>"
+			"],"
+		],
+		"description": "any of structure"
+	},
+
+	"all_of": {
+		"prefix": "all_of",
+		"body": [
+			"all_of = {"
+			"	array = <name>"
+			"	value = <string>"
+			"	index = <string>"
+			"	"
+			"	<triggers>"
+			"}"
+		],
+		"description": "all of structure"
+	},
+	
+	"any_of_scopes": {
+		"prefix": "any_of_scopes",
+		"body": [
+			"any_of_scopes = {"
+			"	array = <name>"
+			"	"
+			"	<triggers>"
+			"}"
+		],
+		"description": "any of scopes structure"
+	},
+
+	"all_of_scopes": {
+		"prefix": "all_of_scopes",
+		"body": [
+			"all_of_scopes = {"
+			"	array = <name>"
+			"	"
+			"	<triggers>"
+			"}"
+		],
+		"description": "all of scopes structure"
+	},
+
+	"text": {
+		"prefix": "text",
+		"body": [
+			"text = {"
+			"	trigger = {"
+			"		<trigger>"
+			"	}"
+			"	localization_key = <loc_key>"
+			"}"
+		],
+		"description": "text for scripted loc structure"
+	},
+
+	"has_game_rule": {
+		"prefix": "has_game_rule",
+		"body": [
+			"has_game_rule = {"
+			"	rule = RULE_NAME_BRO"
+			"	option = OPTION_NAME_BRO"
+			"}"
+		],
+		"description": "has_game_rule structure"
+	}
+}
