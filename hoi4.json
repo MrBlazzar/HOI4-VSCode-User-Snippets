@@ -3,17 +3,17 @@
 		"prefix": "country_event",
 		"body": [
 			"country_event = {"
-				"	id = Namespacehere.IDhere"
-				"	title = Namespacehere.IDhere.t"
-				"	desc = Namespacehere.IDhere.d"
-				"	picture = GFX_event_picture"
-				"	is_triggered_only = yes"
-				"	fire_only_once = yes"
-				""
-				"	trigger = {}"
-				"	mean_time_to_happen = {"
-				"		days = 2"
-				"	}"
+			"\tid = Namespacehere.IDhere"
+			"\ttitle = Namespacehere.IDhere.t"
+			"\tdesc = Namespacehere.IDhere.d"
+			"\tpicture = GFX_event_picture"
+			"\tis_triggered_only = yes"
+			"\tfire_only_once = yes"
+			""
+			"\ttrigger = {}"
+			"\tmean_time_to_happen = {"
+			"\t\tdays = 2"
+			"\t}"
 			"}"
 		],
 		"description": "country event structure"
@@ -23,8 +23,8 @@
 		"prefix": "set_variable",
 		"body": [
 			"set_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VARIABLEVALUE"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VARIABLEVALUE"
 			"}"
 		],
 		"description": "set variable long structure"
@@ -42,8 +42,8 @@
 		"prefix": "add_to_variable",
 		"body": [
 			"add_to_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VALUETOADD"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VALUETOADD"
 			"}"
 		],
 		"description": "add to variable long structure"
@@ -61,8 +61,8 @@
 		"prefix": "subtract_from_variable",
 		"body": [
 			"subtract_from_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VARIABALETOSUBTRACT"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VARIABALETOSUBTRACT"
 			"}"
 		],
 		"description": "subtract from variable long structure"
@@ -80,8 +80,8 @@
 		"prefix": "multiply_variable",
 		"body": [
 			"multiply_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VALUETOMULTIPLE"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VALUETOMULTIPLE"
 			"}"
 		],
 		"description": "multiply variable long structure"
@@ -99,8 +99,8 @@
 		"prefix": "divide_variable",
 		"body": [
 			"divide_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VALUETODIVIDE"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VALUETODIVIDE"
 			"}"
 		],
 		"description": "divide variable long structure"
@@ -126,9 +126,9 @@
 		"prefix": "clamp_variable",
 		"body": [
 			"clamp_variable = {"
-			"	var = VARIABLENAME"
-			"	min = VARIABLETOMINAT"
-			"	max = VARIABLETOMAXAT"
+			"\tvar = VARIABLENAME"
+			"\tmin = VARIABLETOMINAT"
+			"\tmax = VARIABLETOMAXAT"
 			"}"
 		],
 		"description": "clamp variable structure"
@@ -146,9 +146,9 @@
 		"prefix": "check_variable",
 		"body": [
 			"check_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VARIABLETOCOMPARE"
-			"	compare = less_than/less_than_or_equals/greater_than/greater_than_or_equals/equals/not_equals"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VARIABLETOCOMPARE"
+			"\tcompare = less_than/less_than_or_equals/greater_than/greater_than_or_equals/equals/not_equals"
 			"}"
 		],
 		"description": "check variabale structure defaults to greater_than_or_equals if compare is left out"
@@ -174,8 +174,8 @@
 		"prefix": "set_temp_variable",
 		"body": [
 			"set_temp_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VARIABLEVALUE"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VARIABLEVALUE"
 			"}"
 		],
 		"description": "set temp variable long structure"
@@ -193,8 +193,8 @@
 		"prefix": "add_to_temp_variable",
 		"body": [
 			"add_to_temp_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VALUETOADD"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VALUETOADD"
 			"}"
 		],
 		"description": "add to temp variable long structure"
@@ -212,8 +212,8 @@
 		"prefix": "subtract_from_temp_variable",
 		"body": [
 			"subtract_from_temp_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VARIABALETOSUBTRACT"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VARIABALETOSUBTRACT"
 			"}"
 		],
 		"description": "subtract from temp variable long structure"
@@ -231,8 +231,8 @@
 		"prefix": "multiply_temp_variable",
 		"body": [
 			"multiply_temp_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VALUETOMULTIPLE"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VALUETOMULTIPLE"
 			"}"
 		],
 		"description": "multiply temp variable long structure"
@@ -250,8 +250,8 @@
 		"prefix": "divide_temp_variable",
 		"body": [
 			"divide_temp_variable = {"
-			"	var = VARIABLENAME"
-			"	value = VALUETODIVIDE"
+			"\tvar = VARIABLENAME"
+			"\tvalue = VALUETODIVIDE"
 			"}"
 		],
 		"description": "divide temp variable long structure"
@@ -269,9 +269,9 @@
 		"prefix": "clamp_temp_variable",
 		"body": [
 			"clamp_temp_variable = {"
-			"	var = VARIABLENAME"
-			"	min = VARIABLETOMINAT"
-			"	max = VARIABLETOMAXAT"
+			"\tvar = VARIABLENAME"
+			"\tmin = VARIABLETOMINAT"
+			"\tmax = VARIABLETOMAXAT"
 			"}"
 		],
 		"description": "clamp temp variable structure"
@@ -282,7 +282,7 @@
 		"body": [
 			"on_actions = {"
 			""
-			"}"	
+			"}"\t
 		],
 		"description": "on_actions structure"
 	},
@@ -291,9 +291,9 @@
 		"prefix": "on_startup",
 		"body": [
 			"on_startup = {"
-			"	effect = {"
-			"		"
-			"	}"
+			"\teffect = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "on_startup structure"
@@ -303,9 +303,9 @@
 		"prefix": "on_peaceconference",
 		"body": [
 			"on_peaceconference_ended = {"
-			"	effect = {"
-			"		"
-			"	}"
+			"\teffect = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "on_peaceconference_ended structure"
@@ -315,9 +315,9 @@
 		"prefix": "if",
 		"body": [
 			"if = {"
-			"	limit = {"
-			"		"
-			"	}"
+			"\tlimit = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "if structure"
@@ -327,9 +327,9 @@
 		"prefix": "else_if",
 		"body": [
 			"else_if = {"
-			"	limit = {"
-			"		"
-			"	}"
+			"\tlimit = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "else_if structure"
@@ -339,9 +339,9 @@
 		"prefix": "every_state",
 		"body": [
 			"every_state = {"
-			"	limit = {"
-			"		"
-			"	}"
+			"\tlimit = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "every_state structure"
@@ -351,9 +351,9 @@
 		"prefix": "every_owned_state",
 		"body": [
 			"every_owned_state = {"
-			"	limit = {"
-			"		"
-			"	}"
+			"\tlimit = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "every_owned_state structure"
@@ -363,7 +363,7 @@
 		"prefix": "option",
 		"body": [
 			"option = {"
-			"	name = Namespacehere.IDHere.optionletterhere"
+			"\tname = Namespacehere.IDHere.optionletterhere"
 			"}"
 		],
 		"description": "option structure"
@@ -373,7 +373,7 @@
 		"prefix": "immediate",
 		"body": [
 			"immediate = {"
-			"	"
+			"\t"
 			"}"
 		],
 		"description": "immediate structure"
@@ -389,20 +389,20 @@
 		"prefix": "focus",
 		"body": [
 			"focus = {"
-			"	id = focus_id_goes_here"
-			"	icon = icon_goes_here"
-			"	cost = 10"
-			"	x = 0"
-			"	y = 0"
-			"	available = {}"
-			"	bypass = {}"
-			"	allow_branch = {}"
-			"	prerequisite = { focus = prereq_focus_here_more_lines_for_more_of_them }"
-			"	mutually_exclusive = { focus = mutual_exclusive_goes_here }"
-			"	relative_position_id = focus_id_for_relative_goes_here"
+			"\tid = focus_id_goes_here"
+			"\ticon = icon_goes_here"
+			"\tcost = 10"
+			"\tx = 0"
+			"\ty = 0"
+			"\tavailable = {}"
+			"\tbypass = {}"
+			"\tallow_branch = {}"
+			"\tprerequisite = { focus = prereq_focus_here_more_lines_for_more_of_them }"
+			"\tmutually_exclusive = { focus = mutual_exclusive_goes_here }"
+			"\trelative_position_id = focus_id_for_relative_goes_here"
 			""
 			"completion_reward = {"
-			"	"
+			"\t"
 			"}"
 		],
 		"description": "Focus structure"
@@ -412,21 +412,21 @@
 		"prefix": "idea_block",
 		"body": [
 			"IDEA_ID_GOES_HERE = {"
-			"	allowed = {"
-			"		always = no"
-			"	}"
+			"\tallowed = {"
+			"\t\talways = no"
+			"\t}"
 			""
-			"	allowed_civil_war = {"
-			"		always = yes"
-			"	}"
+			"\tallowed_civil_war = {"
+			"\t\talways = yes"
+			"\t}"
 			""
-			"	removal_cost = -1"
+			"\tremoval_cost = -1"
 			""
-			"	picture = PICTURE_ID_GOES_HERE"
+			"\tpicture = PICTURE_ID_GOES_HERE"
 			""
-			"	modifier = {"
-			"		"
-			"	}"
+			"\tmodifier = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "idea structure"
@@ -436,7 +436,7 @@
 		"prefix": "hidden_effect",
 		"body": [
 			"hidden_effect = {"
-			"	"
+			"\t"
 			"}"
 		],
 		"description": "hidden_effect structure"
@@ -446,17 +446,17 @@
 		"prefix": "news_event",
 		"body": [
 			"news_event = {"
-			"	id = Namespacehere.IDhere"
-			"	title = Namespacehere.IDhere.t"
-			"	desc = Namespacehere.IDhere.d"
-			"	picture = GFX_event_picture"
-			"	is_triggered_only = yes"
-			"	fire_only_once = yes"
+			"\tid = Namespacehere.IDhere"
+			"\ttitle = Namespacehere.IDhere.t"
+			"\tdesc = Namespacehere.IDhere.d"
+			"\tpicture = GFX_event_picture"
+			"\tis_triggered_only = yes"
+			"\tfire_only_once = yes"
 			""
-			"	trigger = {}"
-			"	mean_time_to_happen = {"
-			"		days = 2"
-			"	}"
+			"\ttrigger = {}"
+			"\tmean_time_to_happen = {"
+			"\t\tdays = 2"
+			"\t}"
 			"}"
 		],
 		"description": "news event structure"
@@ -466,7 +466,7 @@
 		"prefix": "completion_reward",
 		"body": [
 			"completion_reward = {"
-			"	"
+			"\t"
 			"}"
 		],
 		"description": "completion reward structure"
@@ -476,8 +476,8 @@
 		"prefix": "swap_ideas",
 		"body": [
 			"swap_ideas = {"
-			"	remove_idea = IDEANAMEID"
-			"	add_idea = IDEANAMEID"
+			"\tremove_idea = IDEANAMEID"
+			"\tadd_idea = IDEANAMEID"
 			"}"
 		],
 		"description": "swap ideas structure"
@@ -493,9 +493,9 @@
 		"prefix": "spriteType",
 		"body": [
 			"spriteType = {"
-			"	name = \"GFX_NAMEOFGFXHERE\""
-			"	textureFile = \"directorytofileincludingfilenameandextension\""
-			"	effectFile = \"gfx/FX/buttonstate_nodowneffect.lua\"//unless we actually need a effect usually none needed"
+			"\tname = \"GFX_NAMEOFGFXHERE\""
+			"\ttextureFile = \"directorytofileincludingfilenameandextension\""
+			"\teffectFile = \"gfx/FX/buttonstate_nodowneffect.lua\"//unless we actually need a effect usually none needed"
 			"}"
 		],
 		"description": "spriteType structure"
@@ -505,12 +505,12 @@
 		"prefix": "add_tech_bonus",
 		"body": [
 			"add_tech_bonus = {"
-			"	name = NAMEFORLOCNOTUSUALLYUSED"
-			"	uses = NUMBEROFUSES"
-			"	bonus = BONUS0.01-1"
-			"	ahead_reduction = AHEADREDUCTION0.01-1"
-			"	technology = TECHID"
-			"	category = CATEGORYID"
+			"\tname = NAMEFORLOCNOTUSUALLYUSED"
+			"\tuses = NUMBEROFUSES"
+			"\tbonus = BONUS0.01-1"
+			"\tahead_reduction = AHEADREDUCTION0.01-1"
+			"\ttechnology = TECHID"
+			"\tcategory = CATEGORYID"
 			"}"
 		],
 		"description": "add tech bonus structure"
@@ -520,10 +520,10 @@
 		"prefix": "equipment_bonus",
 		"body": [
 			"equipment_bonus = {"
-			"	equipmentname = {"
-			"		#BONUSESHERE"
-			"		instant = yes"
-			"	}"
+			"\tequipmentname = {"
+			"\t\t#BONUSESHERE"
+			"\t\tinstant = yes"
+			"\t}"
 			"}"
 		],
 		"description": "equipment bonus structure"
@@ -533,19 +533,19 @@
 		"prefix": "defined_text",
 		"body": [
 			"defined_text = {"
-			"	name = NAMEFORLOCTEXTHEREBRO"
-			"	text = {"
-			"		trigger = {"
-			"			"
-			"		}"
-			"		localization_key = LOCKEYHERESURROUNDEDBYQUOTES"
-			"	}"
-			"	text = {"
-			"		trigger = {"
-			"			"
-			"		}"
-			"		localization_key = LOCKEYHERESURROUNDEDBYQUOTES"
-			"	}"
+			"\tname = NAMEFORLOCTEXTHEREBRO"
+			"\ttext = {"
+			"\t\ttrigger = {"
+			"\t\t\t"
+			"\t\t}"
+			"\t\tlocalization_key = LOCKEYHERESURROUNDEDBYQUOTES"
+			"\t}"
+			"\ttext = {"
+			"\t\ttrigger = {"
+			"\t\t\t"
+			"\t\t}"
+			"\t\tlocalization_key = LOCKEYHERESURROUNDEDBYQUOTES"
+			"\t}"
 			"}"
 		],
 		"description": "structure for defined_text"
@@ -555,20 +555,21 @@
 		"prefix": "shared_focus",
 		"body": [
 			"shared_focus = {"
-			"	id = focus_id_goes_here"
-			"	icon = icon_goes_here"
-			"	cost = 10"
-			"	x = 0"
-			"	y = 0"
-			"	available = {}"
-			"	bypass = {}"
-			"	allow_branch = {}"
-			"	prerequisite = { focus = prereq_focus_here_more_lines_for_more_of_them }"
-			"	mutually_exclusive = { focus = mutual_exclusive_goes_here }"
-			"	relative_position_id = focus_id_for_relative_goes_here"
+			"\tid = focus_id_goes_here"
+			"\ticon = icon_goes_here"
+			"\tcost = 10"
+			"\tx = 0"
+			"\ty = 0"
+			"\tavailable = {}"
+			"\tbypass = {}"
+			"\tallow_branch = {}"
+			"\tprerequisite = { focus = prereq_focus_here_more_lines_for_more_of_them }"
+			"\tmutually_exclusive = { focus = mutual_exclusive_goes_here }"
+			"\trelative_position_id = focus_id_for_relative_goes_here"
 			""
-			"completion_reward = {"
-			"	"
+			"\tcompletion_reward = {"
+			"\t\t"
+			"\t}"
 			"}"
 		],
 		"description": "shared_focus structure"
@@ -578,8 +579,8 @@
 		"prefix": "entity",
 		"body": [
 			"entity = {"
-			"	name = putnameofentityinquotes"
-			"	pdxmesh = putnameofmeshinquotes"
+			"\tname = putnameofentityinquotes"
+			"\tpdxmesh = putnameofmeshinquotes"
 			"}"
 		],
 		"description": "entyt structure"
@@ -589,18 +590,18 @@
 		"prefix": "pdxmesh",
 		"body": [
 			"pdxmesh = {"
-			"	name = nameofmeshinquotes"
-			"	file = gfx/models/static_mapobjects/"
+			"\tname = nameofmeshinquotes"
+			"\tfile = gfx/models/static_mapobjects/"
 			""
-			"	meshsettings = {"
-			"		texture_diffuse = nameofdiffusetextureinquotes.dds"
-			"		texture_normal = nameofnormaltextureinquotes.dds"
-			"		texture_specular = nameofpseculartextureinquotes.dds"
-			"	}"
+			"\tmeshsettings = {"
+			"\t\ttexture_diffuse = nameofdiffusetextureinquotes.dds"
+			"\t\ttexture_normal = nameofnormaltextureinquotes.dds"
+			"\t\ttexture_specular = nameofpseculartextureinquotes.dds"
+			"\t}"
 			""
-			"	scale = 1.0"
+			"\tscale = 1.0"
 			""
-			"	cull_distance = 700.0f"
+			"\tcull_distance = 700.0f"
 			"}"
 		],
 		"description": "pdxmesh structure"
@@ -610,19 +611,19 @@
 		"prefix": "type",
 		"body": [
 			"type={"
-			"	type=typeinquotes"
-			"	use_animation=no"
-			"	scale=1.000000"
-			"	always_visible=yes"
-			"	object={"
-			"		name=objectnameinquotes"
-			"		position={"
-			"			1864.000 12.000 981.000"
-			"		}"
-			"		rotation={"
-			"			0.000 0.000 0.000"
-			"		}"
-			"	}"
+			"\ttype=typeinquotes"
+			"\tuse_animation=no"
+			"\tscale=1.000000"
+			"\talways_visible=yes"
+			"\tobject={"
+			"\t\tname=objectnameinquotes"
+			"\t\tposition={"
+			"\t\t\t1864.000 12.000 981.000"
+			"\t\t}"
+			"\t\trotation={"
+			"\t\t\t0.000 0.000 0.000"
+			"\t\t}"
+			"\t}"
 			"}"
 		],
 		"description": "type for static objects structure"
@@ -632,22 +633,22 @@
 		"prefix": "state_shared_building",
 		"body": [
 			"STATE_ID = {"
-			"	if = {"
-			"		limit = {"
-			"			is_owned_and_controlled_by = ROOT"
-			"			free_building_slots = {"
-			"				building = BUILDING_TYPE"
-			"				size > 0"
-			"				include_locked = yes"
-			"			}"
-			"		}"
-			"		add_extra_state_shared_building_slots = NUM_SLOTS"
-			"		add_building_construction = {"
-			"			type = BUILDING_TYPE"
-			"			level = NUM_SLOTS"
-			"			instant_build = yes"
-			"		}"
-			"	}"
+			"\tif = {"
+			"\t\tlimit = {"
+			"\t\t\tis_owned_and_controlled_by = ROOT"
+			"\t\t\tfree_building_slots = {"
+			"\t\t\t\tbuilding = BUILDING_TYPE"
+			"\t\t\t\tsize > 0"
+			"\t\t\t\tinclude_locked = yes"
+			"\t\t\t}"
+			"\t\t}"
+			"\t\tadd_extra_state_shared_building_slots = NUM_SLOTS"
+			"\t\tadd_building_construction = {"
+			"\t\t\ttype = BUILDING_TYPE"
+			"\t\t\tlevel = NUM_SLOTS"
+			"\t\t\tinstant_build = yes"
+			"\t\t}"
+			"\t}"
 			"}"
 		],
 		"description": "structure for state shared buildings"
@@ -657,9 +658,9 @@
 		"prefix": "add_to_array",
 		"body": [
 			"add_to_array = {"
-			"	array = <array_name>"
-			"	value = <value>"
-			"	index = <index_optional>"
+			"\tarray = <array_name>"
+			"\tvalue = <value>"
+			"\tindex = <index_optional>"
 			"}"
 		],
 		"description": "add to array structure"
@@ -669,9 +670,9 @@
 		"prefix": "remove_from_array",
 		"body": [
 			"remove_from_array = {"
-			"	array = <array_name>"
-			"	value = <value>"
-			"	index = <index_optional>"
+			"\tarray = <array_name>"
+			"\tvalue = <value>"
+			"\tindex = <index_optional>"
 			"}"
 		],
 		"description": "remove from array structure"
@@ -689,9 +690,9 @@
 		"prefix": "resize_Array",
 		"body": [
 			"resize_array = {"
-			"	array = <array_name>"
-			"	value = <value>"
-			"	size = <int>"
+			"\tarray = <array_name>"
+			"\tvalue = <value>"
+			"\tsize = <int>"
 			"}"
 		],
 		"description": "resize the array"
@@ -701,12 +702,12 @@
 		"prefix": "for_each_loop",
 		"body": [
 			"for_each_loop = {"
-			"	array = <name>"
-			"	value = <string>"
-			"	index = <string>"
-			"	break = <string>"
-			"	"
-			"	<effects>"
+			"\tarray = <name>"
+			"\tvalue = <string>"
+			"\tindex = <string>"
+			"\tbreak = <string>"
+			"\t"
+			"\t<effects>"
 			"],"
 		],
 		"description": "for each loop structure"
@@ -716,10 +717,10 @@
 		"prefix": "for_each_scope_loop",
 		"body": [
 			"for_each_scope_loop = {"
-			"	array = <name>"
-			"	break = <string>"
-			"	"
-			"	<effects>"
+			"\tarray = <name>"
+			"\tbreak = <string>"
+			"\t"
+			"\t<effects>"
 			"}"
 		],
 		"description": "for each scope loop structure"
@@ -729,11 +730,11 @@
 		"prefix": "random_scope_in_array",
 		"body": [
 			"random_scope_in_array = {"
-			"	array = <name>"
-			"	break = <string>"
-			"	limit = { <triggers> }"
-			"	"
-			"	<effects>"
+			"\tarray = <name>"
+			"\tbreak = <string>"
+			"\tlimit = { <triggers> }"
+			"\t"
+			"\t<effects>"
 			"}"
 		],
 		"description": "random scope in array structure"
@@ -743,9 +744,9 @@
 		"prefix": "add_to_temp_array",
 		"body": [
 			"add_to_temp_array = {"
-			"	array = <array_name>"
-			"	value = <value>"
-			"	index = <index_optional>"
+			"\tarray = <array_name>"
+			"\tvalue = <value>"
+			"\tindex = <index_optional>"
 			"}"
 		],
 		"description": "add to temp array structure"
@@ -755,9 +756,9 @@
 		"prefix": "remove_from_temp_array",
 		"body": [
 			"remove_from_temp_array = {"
-			"	array = <array_name>"
-			"	value = <value>"
-			"	index = <index_optional>"
+			"\tarray = <array_name>"
+			"\tvalue = <value>"
+			"\tindex = <index_optional>"
 			"}"
 		],
 		"description": "remove temp from array structure"
@@ -775,9 +776,9 @@
 		"prefix": "resize_temp_array",
 		"body": [
 			"resize_temp_array = {"
-			"	array = <array_name>"
-			"	value = <value>"
-			"	size = <int>"
+			"\tarray = <array_name>"
+			"\tvalue = <value>"
+			"\tsize = <int>"
 			"}"
 		],
 		"description": "resize the temp array"
@@ -787,8 +788,8 @@
 		"prefix": "is_in_array",
 		"body": [
 			"is_in_array = {"
-			"	array = <name>"
-			"	value = <value>"
+			"\tarray = <name>"
+			"\tvalue = <value>"
 			"}"
 		],
 		"description": "is in array structure"
@@ -798,11 +799,11 @@
 		"prefix": "any_of",
 		"body": [
 			"any_of = {"
-			"	array = <name>"
-			"	value = <string>"
-			"	index = <string>"
-			"	"
-			"	<triggers>"
+			"\tarray = <name>"
+			"\tvalue = <string>"
+			"\tindex = <string>"
+			"\t"
+			"\t<triggers>"
 			"],"
 		],
 		"description": "any of structure"
@@ -812,11 +813,11 @@
 		"prefix": "all_of",
 		"body": [
 			"all_of = {"
-			"	array = <name>"
-			"	value = <string>"
-			"	index = <string>"
-			"	"
-			"	<triggers>"
+			"\tarray = <name>"
+			"\tvalue = <string>"
+			"\tindex = <string>"
+			"\t"
+			"\t<triggers>"
 			"}"
 		],
 		"description": "all of structure"
@@ -826,9 +827,9 @@
 		"prefix": "any_of_scopes",
 		"body": [
 			"any_of_scopes = {"
-			"	array = <name>"
-			"	"
-			"	<triggers>"
+			"\tarray = <name>"
+			"\t"
+			"\t<triggers>"
 			"}"
 		],
 		"description": "any of scopes structure"
@@ -838,9 +839,9 @@
 		"prefix": "all_of_scopes",
 		"body": [
 			"all_of_scopes = {"
-			"	array = <name>"
-			"	"
-			"	<triggers>"
+			"\tarray = <name>"
+			"\t"
+			"\t<triggers>"
 			"}"
 		],
 		"description": "all of scopes structure"
@@ -850,10 +851,10 @@
 		"prefix": "text",
 		"body": [
 			"text = {"
-			"	trigger = {"
-			"		<trigger>"
-			"	}"
-			"	localization_key = <loc_key>"
+			"\ttrigger = {"
+			"\t\t<trigger>"
+			"\t}"
+			"\tlocalization_key = <loc_key>"
 			"}"
 		],
 		"description": "text for scripted loc structure"
@@ -863,8 +864,8 @@
 		"prefix": "has_game_rule",
 		"body": [
 			"has_game_rule = {"
-			"	rule = RULE_NAME_BRO"
-			"	option = OPTION_NAME_BRO"
+			"\trule = RULE_NAME_BRO"
+			"\toption = OPTION_NAME_BRO"
 			"}"
 		],
 		"description": "has_game_rule structure"
