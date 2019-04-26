@@ -14,7 +14,7 @@ Will it work with others? No idea good luck.
 - Download the .json file and directly place it in your snippets directory 
   - Windows: `%APPDATA%\Code\User\snippets`
   - Linux: `~\.config\Code\User\snippets`
-  - Mac: I have absolutely no idea
+  - Mac: Should be the same as linux so `~\.config\Code\User\snippets` don't quote me on that though
 - Make sure to keep the name hoi4.json, as VSCode won't recognize it for use with the extension otherwise
 
 ### Option 2: Directly Copy Code
