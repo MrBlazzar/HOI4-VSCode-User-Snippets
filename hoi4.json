@@ -4,8 +4,8 @@
 		"body": [
 			"country_event = {"
 			"\tid = Namespacehere.IDhere"
-			"\ttitle = Namespacehere.IDhere.t"
-			"\tdesc = Namespacehere.IDhere.d"
+			"\ttitle = Namespacehere.IDhere.title"
+			"\tdesc = Namespacehere.IDhere.desc"
 			"\tpicture = GFX_event_picture"
 			""
 			"\tis_triggered_only = yes"
@@ -405,6 +405,9 @@
 			"\t\tfocus = mutual_exclusive_goes_here"
 			"\t}"
 			"\trelative_position_id = focus_id_for_relative_goes_here"
+			"\tai_will_do = {"
+			"\t\t"
+			"\t}"
 			""
 			"\tcompletion_reward = {"
 			"\t\t"
@@ -664,7 +667,15 @@
 		"description": "structure for state shared buildings"
 	},
 
-	"add_to_array": {
+	"add_to_array_short": {
+		"prefix": "add_to_array",
+		"body": [
+			"add_to_array = { <name> = <value> }"
+		],
+		"description": "add to array short structure"
+	},
+
+	"add_to_array_long": {
 		"prefix": "add_to_array",
 		"body": [
 			"add_to_array = {"
@@ -673,7 +684,7 @@
 			"\tindex = <index_optional>"
 			"}"
 		],
-		"description": "add to array structure"
+		"description": "add to array long structure"
 	},
 
 	"remove_from_array": {
@@ -708,6 +719,34 @@
 		"description": "resize the array"
 	},
 
+	"for_loop_effect": {
+		"prefix": "for_loop_effect",
+		"body": [
+			"for_loop = {"
+			"\tstart = 0 #start value of loop"
+			"\tend = 10 #end value of loop"
+			"\tcompare_type = less_than_or_equals #(default less_than) comparison type between start and end val"
+			"\tadd = 3 #default 1 value to add to current value after each iteration"
+			"\tvalue = value_name #optional (default 'v') current value of iteration will be stored in this temp variable"
+			"\break = break_name #optional (default 'break') set this temp variable to non zero to break the loop"
+			"\t#effects"
+			"}"
+		],
+		"description": "for loop effect structure"
+	},
+
+	"while_loop_effect": {
+		"prefix": "while_loop_effect",
+		"body": [
+			"while_effect = {"
+			"\tlimit = {}"
+			"\tbreak = break_name #optional (default 'break') set this temp variable to non zero to break the loop"
+			"\t#effects"
+			"}"
+		],
+		"description": "while loop effect structure"
+	},
+
 	"for_each_loop": {
 		"prefix": "for_each_loop",
 		"body": [
@@ -718,7 +757,7 @@
 			"\tbreak = <string>"
 			"\t"
 			"\t<effects>"
-			"],"
+			"}"
 		],
 		"description": "for each loop structure"
 	},
@@ -750,7 +789,15 @@
 		"description": "random scope in array structure"
 	},
 
-	"add_to_temp_array": {
+	"add_to_temp_array_short": {
+		"prefix": "add_to_temp_array",
+		"body": [
+			"add_to_temp_array = { <name> = <value> }"
+		],
+		"description": "add to temp array short structure"
+	},
+
+	"add_to_temp_array_long": {
 		"prefix": "add_to_temp_array",
 		"body": [
 			"add_to_temp_array = {"
@@ -759,7 +806,7 @@
 			"\tindex = <index_optional>"
 			"}"
 		],
-		"description": "add to temp array structure"
+		"description": "add to temp array long structure"
 	},
 
 	"remove_from_temp_array": {
@@ -832,7 +879,7 @@
 		],
 		"description": "all of structure"
 	},
-	
+
 	"any_of_scopes": {
 		"prefix": "any_of_scopes",
 		"body": [
@@ -879,5 +926,68 @@
 			"}"
 		],
 		"description": "has_game_rule structure"
+	},
+
+	"desc": {
+		"prefix": "desc",
+		"body": [
+			"desc = {"
+			"\ttext = put_text_name_here"
+			"\ttrigger = {"
+			"\t\t#Trigger-goes-here"
+			"\t}"
+			"}"
+		],
+		"description": "desc structure"
+	},
+
+	"free_building_slots": {
+		"prefix": "free_building_slots",
+		"body": [
+			"free_building_slots = {"
+			"\tbuilding = building_type"
+			"\tsize >/< number"
+			"\tinclude_locked = yes/no"
+			"}"
+		],
+		"description": "free_building_slots structure"
+	},
+
+	"add_building_construction": {
+		"prefix": "add_building_construction",
+		"body": [
+			"add_building_construction = {"
+			"\ttype = building_type"
+			"\tlevel = number"
+			"\tinstant_build = yes/no"
+			"}"
+		],
+		"description": "add_building_construction structure"
+	},
+
+	"meta_effect": {
+		"prefix": "meta_effect",
+		"body": [
+			"meta_effect = {"
+			"\ttext = {"
+			"\t\t#effects"
+			"\t}"
+			"\t#STUFF"
+			"}"
+		],
+		"description": "meta_effect structure"
+	},
+
+	"meta_trigger": {
+		"prefix": "meta_trigger",
+		"body": [
+			"meta_trigger = {"
+			"\ttext = {"
+			"\t\t#trigger"
+			"\t}"
+			"\t#stuff"
+			"}"
+		],
+		"description": "meta_trigger structure"
 	}
 }
