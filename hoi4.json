@@ -1009,6 +1009,7 @@
 			"\t}"
 			"\tcivilian = {"
 			"\t\tlarge = gfx_sprite_type_name_or_file_path"
+			"\t\tsmall = gfx_sprite_type_name_or_file_path"
 			"\t}"
 			"}"
 			"country_leader = {"
@@ -1055,6 +1056,17 @@
 			"\tlogistics_skill = 1"
 			"\tlegacy_id = -1"
 			"}"
+			"field_marshal = {"
+			"\tvisible = {"
+			"\t\t#visible_triggers"
+			"\t}"
+			"\tskill = 1"
+			"\tattack_skill = 1"
+			"\tdefense_skill = 1"
+			"\tplanning_skill = 1"
+			"\tlogistics_skill = 1"
+			"\tlegacy_id = -1"
+			"}"
 		],
 		"description": "character_block_non_instance structure"
 	},
@@ -1074,6 +1086,7 @@
 			"\t\t}"
 			"\t\tcivilian = {"
 			"\t\t\tlarge = gfx_sprite_type_name_or_file_path"
+			"\t\t\tsmall = gfx_sprite_type_name_or_file_path"
 			"\t\t}"
 			"\t}"
 			"\tcountry_leader = {"
@@ -1110,9 +1123,20 @@
 			"\t\t}"
 			"\t}"
 			"\tcorps_commander = {"
-			"\tvisible = {"
-			"\t\t#visible_triggers"
+			"\t\tvisible = {"
+			"\t\t\t#visible_triggers"
+			"\t\t}"
+			"\t\tskill = 1"
+			"\t\tattack_skill = 1"
+			"\t\tdefense_skill = 1"
+			"\t\tplanning_skill = 1"
+			"\t\tlogistics_skill = 1"
+			"\t\tlegacy_id = -1"
 			"\t}"
+			"\tfield_marshal = {"
+			"\t\tvisible = {"
+			"\t\t\t#visible_triggers"
+			"\t\t}"
 			"\t\tskill = 1"
 			"\t\tattack_skill = 1"
 			"\t\tdefense_skill = 1"
@@ -1174,6 +1198,24 @@
 		"description": "character_corps_commander_block structure"
 	},
 
+	"character_field_marshal_block": {
+		"prefix": "character_field_marshal_block",
+		"body": [
+			"field_marshal = {"
+			"\tvisible = {"
+			"\t\t#visible_triggers"
+			"\t}"
+			"\tskill = 1"
+			"\tattack_skill = 1"
+			"\tdefense_skill = 1"
+			"\tplanning_skill = 1"
+			"\tlogistics_skill = 1"
+			"\tlegacy_id = -1"
+			"}"
+		],
+		"description": "character_field_marshal_block structure"
+	},
+
 	"character_portrait_block": {
 		"prefix": "character_portrait_block",
 		"body": [
@@ -1184,6 +1226,7 @@
 			"\t}"
 			"\tcivilian = {"
 			"\t\tlarge = gfx_sprite_type_name_or_file_path"
+			"\t\tsmall = gfx_sprite_type_name_or_file_path"
 			"\t}"
 			"}"
 		],
