@@ -1267,11 +1267,105 @@
 		"description": "character_country_leader_block structure"
 	},
 
-	"character_name_block": {
-		"prefix": "character_name_block",
+	"add_country_leader_role_block": {
+		"prefix": "add_country_leader_role_block",
 		"body": [
-			"name = name_loc_string"
+			"add_country_leader_role = {"
+			"\tcharacter = characer_id_here"
+			"\tpromote_leader = yes_no"
+			"\tcountry_leader = {"
+			"\t\tdesc = description_loc_string"
+			"\t\tideology = subideolog_here"
+			"\t\ttraits = {"
+			"\t\t\t#traits_here"
+			"\t\t}"
+			"\t\texpire = \"year.month.day.hour\""
+			"\t\tid = -1"
+			"\t}"
+			"}"
 		],
-		"description": "character_name_block structure"
+		"description": "add_country_leader_role_block structure"
+	},
+
+	"add_corps_commander_role_block": {
+		"prefix": "add_corps_commander_role_block",
+		"body": [
+			"add_corps_commander_role = {"
+			"\tcharacter = character_id_here"
+			"\tcorps_commander = {"
+			"\t\tvisible = {"
+			"\t\t\t#visible_triggers"
+			"\t\t}"
+			"\t\ttraits = {"
+			"\t\t\t#traits"
+			"\t\t}"
+			"\t\tskill = 1"
+			"\t\tattack_skill = 1"
+			"\t\tdefense_skill = 1"
+			"\t\tplanning_skill = 1"
+			"\t\tlogistics_skill = 1"
+			"\t\tlegacy_id = -1"
+			"\t}"
+			"}"
+		],
+		"description": "add_corps_commander_role_block structure"
+	},
+
+	"add_field_marshal_role_block": {
+		"prefix": "add_field_marshal_role_block",
+		"body": [
+			"add_field_marshal_role = {"
+			"\tcharacter = character_id_here"
+			"\tfield_marshal = {"
+			"\t\tvisible = {"
+			"\t\t\t#visible_triggers"
+			"\t\t}"
+			"\t\ttraits = {"
+			"\t\t\t#traits"
+			"\t\t}"
+			"\t\tskill = 1"
+			"\t\tattack_skill = 1"
+			"\t\tdefense_skill = 1"
+			"\t\tplanning_skill = 1"
+			"\t\tlogistics_skill = 1"
+			"\t\tlegacy_id = -1"
+			"\t}"
+			"}"
+		],
+		"description": "add_field_marshal_role_block structure"
+	},
+
+	"add_advisor_role_block": {
+		"prefix": "add_advisor_role_block",
+		"body": [
+			"add_advisor_role = {"
+			"\tcharacter = character_id_here"
+			"\tadvisor = {"
+			"\t\tslot = air_chief/army_chief/navy_chief/cultural_advisor/economic_advisor/political_advisor"
+			"\t\tidea_token = name_loc_string_slot_type"
+			"\t\tledger = air/army/navy"
+			"\t\tallowed = {"
+			"\t\t\t#Allow_trigger"
+			"\t\t}"
+			"\t\tavailable = {"
+			"\t\t\t#available_trigger"
+			"\t\t}"
+			"\t\tvisible = {"
+			"\t\t\t#visible_trigger"
+			"\t\t}"
+			"\t\tmodifier = {"
+			"\t\t\t#modifier_effects"
+			"\t\t}"
+			"\t\ttraits = {"
+			"\t\t\t#traits_here"
+			"\t\t}"
+			"\t\tcost = 100"
+			"\t\tai_will_do = {"
+			"\t\t\tfactor = 10"
+			"\t\t}"
+			"\t}"
+			"}"
+		],
+		"description": "add_advisor_role_block structure"
 	}
 }
